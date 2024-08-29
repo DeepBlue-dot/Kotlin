@@ -1,7 +1,3 @@
-Here’s a sample `README.md` file tailored for your Kotlin project repository. It provides an overview of the project, setup instructions, and usage guidelines to help you get started with learning Kotlin and working on projects.
-
----
-
 # My Kotlin Project
 
 Welcome to the **My Kotlin Project** repository! This project is a personal repository for learning Kotlin and developing various Kotlin-based applications. Feel free to explore, contribute, and use this as a resource for your Kotlin learning journey.
@@ -102,7 +98,3 @@ Feel free to contribute by submitting issues, feature requests, or pull requests
 ### License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to modify and extend this README as needed for your specific projects and goals.

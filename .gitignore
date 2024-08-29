@@ -1,0 +1,51 @@
+.vscode/
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Maven build directory
+/target/
+
+# IntelliJ IDEA files
+.idea/
+/*.iml
+/modules.xml
+/workspace.xml
+/usage.statistics.xml
+/tasks.xml
+
+# Eclipse project files
+/.project
+/.classpath
+/.settings/
+
+# VS Code files
+.vscode/
+
+# Gradle files
+.gradle/
+/build/
+
+# JetBrains specific files
+/out/
+
+# Generated Kotlin files
+*.kotlin_metadata
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Other ignored files
+*.swp
+*.swo
+*.bak
+*.orig
+*.tmp
+*~
