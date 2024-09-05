@@ -1,11 +1,11 @@
-package com.deepblue.springboot.tutorials.thenewboston
+package com.springboot.demo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ThenewbostonApplication
+class DemoApplication
 
 fun main(args: Array<String>) {
-	runApplication<ThenewbostonApplication>(*args)
+	runApplication<DemoApplication>(*args)
 }

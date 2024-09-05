@@ -1,10 +1,10 @@
-package com.deepblue.springboot.tutorials.thenewboston
+package com.springboot.demo
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class ThenewbostonApplicationTests {
+class DemoApplicationTests {
 
 	@Test
 	fun contextLoads() {
