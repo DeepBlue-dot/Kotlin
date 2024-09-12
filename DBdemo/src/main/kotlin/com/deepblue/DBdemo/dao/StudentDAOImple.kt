@@ -30,4 +30,19 @@ class StudentDAOImple (private var entityManager: EntityManager): StudentDAO {
         query.setParameter("lastName", lastName)
         return query.resultList
     }
+
+    @Transactional
+    override fun udateStudent(stud: Student) {
+        entityManager.merge(stud)
+    }
+    @Transactional
+    override fun deleteStudent(stud: Student) {
+        val stu = entityManager.find(Student::class.java, stud.getId())
+        entityManager.remove(stu)
+    }
+    @Transactional
+    override fun deleteAll(): Boolean {
+        return entityManager.createQuery("DELETE FROM Student").executeUpdate() > 0
+    }
+
 }

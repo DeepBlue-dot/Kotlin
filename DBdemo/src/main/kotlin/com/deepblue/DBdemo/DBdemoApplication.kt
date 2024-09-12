@@ -13,10 +13,13 @@ class DBdemoApplication {
 	@Bean
 	fun commandLineRunner(sudentDAO: StudentDAO): CommandLineRunner {
 		return CommandLineRunner {
+			sudentDAO.deleteAll()
 			createStudent(sudentDAO)
 			readStudent(sudentDAO,2)
 			listAllStudent(sudentDAO)
 			readStudentByLastName(sudentDAO, "fikadu")
+			updateStudent(sudentDAO)
+			deleteStudent(sudentDAO, 120)
 		}
 	}
 	fun createStudent(studDAO: StudentDAO) {
@@ -46,6 +49,17 @@ class DBdemoApplication {
 		}
 	}
 
+	fun updateStudent(studDAO: StudentDAO) {
+		var stu = studDAO.findById(4)?: return
+		stu.setFirstName("bigMan")
+		studDAO.udateStudent(stu)
+		readStudent(studDAO, stu.getId())
+	}
+	fun deleteStudent(studDAO: StudentDAO, id: Int) {
+		val stu = studDAO.findById(id)?: return
+		readStudent(studDAO, id)
+		studDAO.deleteStudent(stu)
+	}
 }
 
 fun main(args: Array<String>) {
